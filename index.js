@@ -30,37 +30,38 @@ const questions = [
     name: "contribution",
     message: "Enter contribution guidelines",
   },
-  {
-    type: "input",
-    name: "tests",
-    message: "Enter test instructions",
-  },
+  // {
+  //   type: "input",
+  //   name: "tests",
+  //   message: "Enter test instructions",
+  // },
   {
     type: "checkbox",
     name: "license",
     message: "Choose a license:",
     choices: ["MIT"],
   },
-  {
-    type: "input",
-    name: "userName",
-    message: "Enter your GitHub username",
-  },
-  {
-    type: "input",
-    name: "email",
-    message: "Enter your email address",
-  },
+  // {
+  //   type: "input",
+  //   name: "userName",
+  //   message: "Enter your GitHub username",
+  // },
+  // {
+  //   type: "input",
+  //   name: "email",
+  //   message: "Enter your email address",
+  // },
 ];
 
-inquirer.prompt(questions).then((data) => console.log(data));
+inquirer.prompt(questions).then((data) => writeToFile(data));
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile(README.MD, JSON.stringify(data, null, '\t'), (err) =>
-//       err ? console.log(err) : console.log('Success!')
-//     );
-// }
+function writeToFile(data) {
+  console.log(data);
+  fs.writeFile("./utils/README.MD", generate(data), (err) =>
+    err ? console.log(err) : console.log("Success!")
+  );
+}
 
 // TODO: Create a function to initialize app
 //function init() {}
