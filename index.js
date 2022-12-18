@@ -10,26 +10,26 @@ const questions = [
     name: "title",
     message: "What is the project title?",
   },
-  {
-    type: "input",
-    name: "description",
-    message: "Enter Project Description",
-  },
-  {
-    type: "input",
-    name: "installation",
-    message: "Enter installation instructions",
-  },
-  {
-    type: "input",
-    name: "usage",
-    message: "Enter usage information",
-  },
-  {
-    type: "input",
-    name: "contribution",
-    message: "Enter contribution guidelines",
-  },
+  // {
+  //   type: "input",
+  //   name: "description",
+  //   message: "Enter Project Description",
+  // },
+  // {
+  //   type: "input",
+  //   name: "installation",
+  //   message: "Enter installation instructions",
+  // },
+  // {
+  //   type: "input",
+  //   name: "usage",
+  //   message: "Enter usage information",
+  // },
+  // {
+  //   type: "input",
+  //   name: "contribution",
+  //   message: "Enter contribution guidelines",
+  // },
   // {
   //   type: "input",
   //   name: "tests",

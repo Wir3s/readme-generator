@@ -9,19 +9,14 @@ function renderLicenseBadge(license) {
     case "MIT":
       licenseBadge =
         "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-      console.log(licenseBadge);
+      return licenseBadge;
+    case "Mozilla":
+      licenseBadge =
+        "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
       return licenseBadge;
     default:
       licenseBadge = "";
   }
-  // if (trimLic === "MIT") {
-  //   licenseBadge =
-  //     "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-  //   console.log(licenseBadge);
-  //   return licenseBadge;
-  // } else {
-  //   return licenseBadge;
-  // }
 }
 
 // TODO: Create a function that returns the license link
@@ -40,16 +35,26 @@ function generateMarkdown(data) {
 ## Description
   ${data.description}
 
+## Table of Contents
+  [Installation](#installation)  
+  [Usage](#usage)  
+  [Contribution](#contribution)  
+  [License](#license)  
+  [Tests](#tests)
+  [Questions](#questions)
+
 ## Installation
   ${data.installation}
 
 ## Usage
   ${data.usage}
 
-## Contribution
+## Contributing
   ${data.contribution}
 
+## Tests
 
+## Questions
 
 ## License
   ${data.license}
