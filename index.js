@@ -39,7 +39,7 @@ const questions = [
     type: "checkbox",
     name: "license",
     message: "Choose a license:",
-    choices: ["MIT"],
+    choices: ['MIT', 'Mozilla'],
   },
   // {
   //   type: "input",

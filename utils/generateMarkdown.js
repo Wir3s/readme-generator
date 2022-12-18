@@ -3,12 +3,25 @@
 function renderLicenseBadge(license) {
   console.log("hi", license);
   let licenseBadge = "";
-  if (license === "MIT") {
-    let licenseBadge = 5;
-    return licenseBadge;
-  } else {
-    return licenseBadge;
+  let trimLic = String(license);
+  console.log(trimLic);
+  switch (trimLic) {
+    case "MIT":
+      licenseBadge =
+        "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      console.log(licenseBadge);
+      return licenseBadge;
+    default:
+      licenseBadge = "";
   }
+  // if (trimLic === "MIT") {
+  //   licenseBadge =
+  //     "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+  //   console.log(licenseBadge);
+  //   return licenseBadge;
+  // } else {
+  //   return licenseBadge;
+  // }
 }
 
 // TODO: Create a function that returns the license link
