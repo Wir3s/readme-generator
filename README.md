@@ -18,7 +18,7 @@
 ## Usage
   It can be used by running 'node index.js' from the terminal.
   
-  [!(./images/readme-gen-sc1.png)]
+  !(./images/readme-gen-sc1.png)
 
 ## Contributing
   Any contribution suggestions are welcome.
